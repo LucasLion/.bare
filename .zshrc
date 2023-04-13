@@ -1,5 +1,6 @@
 
 # .zshrc
+# .zshrc
 export token="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"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
