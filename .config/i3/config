@@ -204,7 +204,8 @@ bar {
        font pango:JetBrains Mono 10
 }
 
-bindsym $mod+d exec "rofi -modi window,drun,run -show run -sidebar-mode -terminal kitty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+d exec "rofi -modi drun -show run -sidebar-mode -terminal kitty -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+bindsym $mod+g exec "$HOME/scripts/rofi/google_search.sh"
 bindsym $mod+m exec "/home/$USER/scripts/radio.sh"
 
 exec --no-startup-id picom --config ~/.config/picom.conf -f
@@ -215,5 +216,7 @@ exec --no-startup-id xset s off -dpms
 #exec --no-startup-id killall $HOME/scripts/back4.sh 
 # exec --no-startup-id $HOME/scripts/back4.sh auto /home/noil/Images/wallpapers/takestwo.gif
 
+exec --no-startup-id blueman-applet
+exec --no-startup-id nm-applet
 exec --no-startup-id `xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1`
 

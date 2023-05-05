@@ -25,7 +25,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HIST_IGNORE_DUPS=true
 HIST_IGNORE_SPACE=true
-bindkey '^[[A' history-beginning-search-backward
+bindkey '^R' history-incremental-search-backward
 
 setopt EXTENDED_HISTORY
 bindkey -v
@@ -60,3 +60,11 @@ if [[ "$(tty)" = "/dev/tty1" ]]; then
 	pgrep i3 || startx "home/noil/.config/X11/xinitrc"
 fi
 
+
+# pnpm
+export PNPM_HOME="/home/noil/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
