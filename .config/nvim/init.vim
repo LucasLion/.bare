@@ -77,8 +77,9 @@ hi Normal guibg=NONE ctermbg=NONE
 :let mapleader = " "
 set t_Co=256
 
-"automate ctags
-"autocmd BufWritePost *.c,*.h silent! !ctags . &
+" ctags
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 set termguicolors
 
