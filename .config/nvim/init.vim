@@ -85,6 +85,7 @@ set termguicolors
 
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>m :MaximizerToggle<CR>
+nnoremap <leader>s :noh<CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -94,7 +95,7 @@ nnoremap <leader>h :wincmd h<CR>
 nnoremap <silent> <leader>= :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <silent> <leader>] :resize +5<CR>
-nnoremap <silent> <leader>\ :resize +5<CR>
+nnoremap <silent> <leader>\ :resize -5<CR>
 nnoremap ff za
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
