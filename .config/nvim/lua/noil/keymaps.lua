@@ -1,8 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>n", vim.cmd.Ex)
 
-vim.keymap.set("n", "<leader>w", ":w<CR>")
-vim.keymap.set("n", "<leader>n", ":NERDTreeToggle<CR>")
 vim.keymap.set("n", "<leader>m", ":MaximizerToggle<CR>")
 vim.keymap.set("n", "<leader>s", ":noh<CR>")
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>")
