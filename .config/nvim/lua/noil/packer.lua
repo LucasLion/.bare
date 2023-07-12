@@ -13,13 +13,14 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
+  --use({
+  --    'rose-pine/neovim',
+  --    as = 'rose-pine',
+  --    config = function()
+  --  	  vim.cmd('colorscheme rose-pine')
+  --    end
+  --})
+  use('ellisonleao/gruvbox.nvim')
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
@@ -53,5 +54,5 @@ return require('packer').startup(function(use)
   use('42Paris/42header')
   use('github/copilot.vim')
   use('nvim-tree/nvim-web-devicons')
-  use('dense-analysis/ale')
+  --use('dense-analysis/ale')
 end)
